@@ -25,9 +25,10 @@ namespace BlabberApp.DomainTest.Entities
         [TestMethod]
         public void TestSetGetEmail_Fail()
         {
-            User harness = new User(); 
-            var ex = Assert.ThrowsException<FormatException>(() => harness.ChangeEmail("example.com"));
-            Assert.AreEqual("Email is invalid", ex.Message.ToString());
+            User harness = new User();
+            string fakemail = "example.com";
+            var ex = Assert.ThrowsException<FormatException>(() => harness.ChangeEmail(fakemail));
+            Assert.AreEqual(fakemail + " is invalid", ex.Message.ToString());
         }
         /// <summary>
         /// Tests the UserID
