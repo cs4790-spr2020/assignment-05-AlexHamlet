@@ -52,8 +52,7 @@ namespace BlabberApp.DataStoreTest
             _user.LastLoginDTTM = DateTime.Now;
             _harness.Add(_user);
             //Act
-            ArrayList users = (ArrayList)_harness.GetAll();
-            User actual = (User)users[0];
+            User actual = _harness.GetByEmail(_email);
             //Assert
             Assert.AreEqual(_user.Id.ToString(), actual.Id.ToString());
         }

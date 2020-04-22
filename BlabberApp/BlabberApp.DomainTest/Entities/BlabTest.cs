@@ -18,6 +18,22 @@ namespace BlabberApp.DomainTest.Entities
         {
             blab = new Blab();
         }
+        [TestMethod]
+        public void TestConstructors()
+        {
+            string message = "Blab";
+            User user = new User();
+            Blab blab = new Blab(message);
+            Assert.AreEqual(blab.Message, message);
+
+            blab = new Blab(user);
+            Assert.AreEqual(blab.User, user);
+
+            blab = new Blab(message, user);
+            Assert.AreEqual(blab.User, user);
+            Assert.AreEqual(blab.Message, message);
+
+        }
         /// <summary>
         /// enusres that we can get the Blab message
         /// </summary>

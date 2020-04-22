@@ -58,14 +58,6 @@ namespace BlabberApp.Domain.Entities
         public DateTime DTTM { get; }
         public string Message { get; set; }
         public User User { get; set; }
-        /// <summary>
-        /// Not sure what this is for
-        /// Leaving it here for safety
-        /// </summary>
-        /// <returns></returns>
-        public bool IsValid()
-        {
-            return true;
-        }
+
     }
 }

@@ -56,14 +56,14 @@ namespace BlabberApp.Domain.Entities
         /// Checks to see if this is a valid user.
         /// </summary>
         /// <returns></returns>
-        public bool IsValid()
-        {
-            if (Id == null) throw new ArgumentNullException();
-            if (Email == null) throw new ArgumentNullException();
-            if (Email.ToString() == "") throw new FormatException();
-            if (LastLoginDTTM == null) throw new ArgumentNullException();
-            if (RegisterDTTM == null) throw new ArgumentNullException();
-            return true;
-        }
+        //public bool IsValid()
+        //{
+        //    if (Id == null) throw new ArgumentNullException();
+        //    if (Email == null) throw new ArgumentNullException();
+        //    if (Email.ToString() == "") throw new FormatException();
+        //    if (LastLoginDTTM == null) throw new ArgumentNullException();
+        //    if (RegisterDTTM == null) throw new ArgumentNullException();
+        //    return true;
+        //}
     }
 }

@@ -9,7 +9,7 @@ namespace BlabberApp.ClientTest
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.Equals(true, true);
+            Assert.AreEqual(true, true);
         }
     }
 }

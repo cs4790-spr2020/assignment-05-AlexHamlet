@@ -57,7 +57,7 @@ namespace BlabberApp.Services
         /// <returns></returns>
         public IEnumerable FindUserBlabs(string email)
         {
-            throw new NotImplementedException();
+            return null;
         }
         /// <summary>
         /// Appears to make a new blab by specifiying a user and a message

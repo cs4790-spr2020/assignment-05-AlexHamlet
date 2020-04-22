@@ -1,4 +1,4 @@
-SF:C:\Users\Alex\Desktop\MISC School\CS 4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.Domain\Entities\Blab.cs
+SF:C:\Users\Alex\Git\CS4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.Domain\Entities\Blab.cs
 FN:56,System.Guid BlabberApp.Domain.Entities.Blab::get_Id()
 FNDA:0,System.Guid BlabberApp.Domain.Entities.Blab::get_Id()
 DA:57,0
@@ -6,59 +6,54 @@ FN:57,System.DateTime BlabberApp.Domain.Entities.Blab::get_DTTM()
 FNDA:2,System.DateTime BlabberApp.Domain.Entities.Blab::get_DTTM()
 DA:58,2
 FN:58,System.String BlabberApp.Domain.Entities.Blab::get_Message()
-FNDA:7,System.String BlabberApp.Domain.Entities.Blab::get_Message()
-DA:59,7
+FNDA:13,System.String BlabberApp.Domain.Entities.Blab::get_Message()
+DA:59,13
 FN:59,BlabberApp.Domain.Entities.User BlabberApp.Domain.Entities.Blab::get_User()
-FNDA:0,BlabberApp.Domain.Entities.User BlabberApp.Domain.Entities.Blab::get_User()
-DA:60,0
-FN:66,System.Boolean BlabberApp.Domain.Entities.Blab::IsValid()
-FNDA:0,System.Boolean BlabberApp.Domain.Entities.Blab::IsValid()
-DA:67,0
-DA:68,0
-DA:69,0
+FNDA:11,BlabberApp.Domain.Entities.User BlabberApp.Domain.Entities.Blab::get_User()
+DA:60,11
 FN:16,System.Void BlabberApp.Domain.Entities.Blab::.ctor()
-FNDA:5,System.Void BlabberApp.Domain.Entities.Blab::.ctor()
-DA:17,5
-DA:18,5
-DA:19,5
-DA:20,5
-DA:21,5
-DA:22,5
+FNDA:6,System.Void BlabberApp.Domain.Entities.Blab::.ctor()
+DA:17,6
+DA:18,6
+DA:19,6
+DA:20,6
+DA:21,6
+DA:22,6
 FN:26,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String)
-FNDA:0,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String)
-DA:27,0
-DA:28,0
-DA:29,0
-DA:30,0
-DA:31,0
-DA:32,0
+FNDA:1,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String)
+DA:27,1
+DA:28,1
+DA:29,1
+DA:30,1
+DA:31,1
+DA:32,1
 FN:36,System.Void BlabberApp.Domain.Entities.Blab::.ctor(BlabberApp.Domain.Entities.User)
-FNDA:0,System.Void BlabberApp.Domain.Entities.Blab::.ctor(BlabberApp.Domain.Entities.User)
-DA:37,0
-DA:38,0
-DA:39,0
-DA:40,0
-DA:41,0
-DA:42,0
+FNDA:1,System.Void BlabberApp.Domain.Entities.Blab::.ctor(BlabberApp.Domain.Entities.User)
+DA:37,1
+DA:38,1
+DA:39,1
+DA:40,1
+DA:41,1
+DA:42,1
 FN:47,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String,BlabberApp.Domain.Entities.User)
-FNDA:0,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String,BlabberApp.Domain.Entities.User)
-DA:48,0
-DA:49,0
-DA:50,0
-DA:51,0
-DA:52,0
-DA:53,0
-LF:31
-LH:8
+FNDA:1,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String,BlabberApp.Domain.Entities.User)
+DA:48,1
+DA:49,1
+DA:50,1
+DA:51,1
+DA:52,1
+DA:53,1
+LF:28
+LH:27
 BRF:0
 BRH:0
-FNF:9
-FNH:3
+FNF:8
+FNH:7
 end_of_record
-SF:C:\Users\Alex\Desktop\MISC School\CS 4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.Domain\Entities\User.cs
+SF:C:\Users\Alex\Git\CS4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.Domain\Entities\User.cs
 FN:16,System.Guid BlabberApp.Domain.Entities.User::get_Id()
-FNDA:10,System.Guid BlabberApp.Domain.Entities.User::get_Id()
-DA:17,10
+FNDA:13,System.Guid BlabberApp.Domain.Entities.User::get_Id()
+DA:17,13
 FN:17,System.DateTime BlabberApp.Domain.Entities.User::get_RegisterDTTM()
 FNDA:0,System.DateTime BlabberApp.Domain.Entities.User::get_RegisterDTTM()
 DA:18,0
@@ -85,32 +80,12 @@ BRDA:43,7,0,2
 BRDA:43,7,1,0
 BRDA:43,24,0,0
 BRDA:43,24,1,2
-FN:59,System.Boolean BlabberApp.Domain.Entities.User::IsValid()
-FNDA:0,System.Boolean BlabberApp.Domain.Entities.User::IsValid()
-DA:60,0
-DA:61,0
-DA:62,0
-DA:63,0
-DA:64,0
-DA:65,0
-DA:66,0
-DA:67,0
-BRDA:61,11,0,0
-BRDA:61,11,1,0
-BRDA:62,30,0,0
-BRDA:62,30,1,0
-BRDA:63,61,0,0
-BRDA:63,61,1,0
-BRDA:64,79,0,0
-BRDA:64,79,1,0
-BRDA:65,99,0,0
-BRDA:65,99,1,0
 FN:23,System.Void BlabberApp.Domain.Entities.User::.ctor()
-FNDA:8,System.Void BlabberApp.Domain.Entities.User::.ctor()
-DA:24,8
-DA:25,8
-DA:26,8
-DA:27,8
+FNDA:11,System.Void BlabberApp.Domain.Entities.User::.ctor()
+DA:24,11
+DA:25,11
+DA:26,11
+DA:27,11
 FN:31,System.Void BlabberApp.Domain.Entities.User::.ctor(System.String)
 FNDA:0,System.Void BlabberApp.Domain.Entities.User::.ctor(System.String)
 DA:32,0
@@ -118,10 +93,10 @@ DA:33,0
 DA:34,0
 DA:35,0
 DA:36,0
-LF:32
+LF:24
 LH:16
-BRF:14
+BRF:4
 BRH:2
-FNF:8
+FNF:7
 FNH:4
 end_of_record
