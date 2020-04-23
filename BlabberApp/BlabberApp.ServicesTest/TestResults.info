@@ -52,13 +52,14 @@ FN:102,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.InMemory::Rea
 FNDA:0,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.InMemory::ReadByUserId(System.String)
 DA:103,0
 DA:104,0
+DA:105,0
 FN:21,System.Void BlabberApp.DataStore.Plugins.InMemory::.ctor()
 FNDA:8,System.Void BlabberApp.DataStore.Plugins.InMemory::.ctor()
 DA:22,8
 DA:23,8
 DA:24,8
 DA:25,8
-LF:35
+LF:36
 LH:17
 BRF:8
 BRH:2
@@ -66,108 +67,96 @@ FNF:8
 FNH:4
 end_of_record
 SF:C:\Users\Alex\Git\CS4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.DataStore\Plugins\MySqlBlab.cs
-FN:40,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Close()
+FN:36,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Close()
 FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Close()
-DA:41,0
-DA:42,0
-DA:43,0
-FN:48,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Create(BlabberApp.Domain.Interfaces.IEntity)
+DA:37,0
+DA:38,0
+DA:39,0
+FN:44,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Create(BlabberApp.Domain.Interfaces.IEntity)
 FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Create(BlabberApp.Domain.Interfaces.IEntity)
+DA:45,0
+DA:47,0
+DA:48,0
 DA:49,0
 DA:51,0
 DA:52,0
 DA:53,0
+DA:54,0
 DA:55,0
 DA:56,0
 DA:57,0
 DA:58,0
 DA:59,0
 DA:60,0
-DA:61,0
-DA:62,0
-DA:63,0
-DA:64,0
-DA:65,0
-DA:67,0
-FN:72,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlBlab::ReadAll()
+FN:65,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlBlab::ReadAll()
 FNDA:0,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlBlab::ReadAll()
+DA:66,0
+DA:68,0
+DA:70,0
+DA:71,0
+DA:72,0
 DA:73,0
 DA:75,0
 DA:77,0
-DA:78,0
 DA:79,0
 DA:80,0
+DA:81,0
 DA:82,0
 DA:84,0
 DA:86,0
 DA:87,0
-DA:88,0
-DA:89,0
-DA:91,0
-DA:93,0
-DA:94,0
-DA:95,0
-DA:97,0
-BRDA:86,109,1,0
-BRDA:86,109,0,0
-FN:103,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlBlab::ReadById(System.Guid)
+BRDA:79,109,1,0
+BRDA:79,109,0,0
+FN:93,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlBlab::ReadById(System.Guid)
 FNDA:0,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlBlab::ReadById(System.Guid)
-DA:104,0
+DA:94,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:103,0
+DA:105,0
 DA:106,0
 DA:108,0
-DA:109,0
 DA:110,0
-DA:111,0
+DA:112,0
 DA:113,0
-DA:115,0
-DA:116,0
-DA:118,0
+FN:119,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlBlab::ReadByUserId(System.String)
+FNDA:0,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlBlab::ReadByUserId(System.String)
 DA:120,0
 DA:122,0
-DA:123,0
 DA:124,0
+DA:125,0
 DA:126,0
-FN:132,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlBlab::ReadByUserId(System.String)
-FNDA:0,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlBlab::ReadByUserId(System.String)
+DA:127,0
+DA:129,0
+DA:131,0
 DA:133,0
+DA:134,0
 DA:135,0
-DA:137,0
+DA:136,0
 DA:138,0
 DA:139,0
-DA:140,0
-DA:142,0
-DA:144,0
-DA:146,0
-DA:147,0
-DA:148,0
-DA:149,0
-DA:151,0
-DA:153,0
-DA:154,0
-DA:155,0
-DA:157,0
-BRDA:146,125,1,0
-BRDA:146,125,0,0
-FN:162,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Update(BlabberApp.Domain.Interfaces.IEntity)
+DA:141,0
+BRDA:133,125,1,0
+BRDA:133,125,0,0
+FN:146,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Update(BlabberApp.Domain.Interfaces.IEntity)
 FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Update(BlabberApp.Domain.Interfaces.IEntity)
+DA:147,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+FN:159,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Delete(BlabberApp.Domain.Interfaces.IEntity)
+FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Delete(BlabberApp.Domain.Interfaces.IEntity)
+DA:160,0
+DA:162,0
 DA:163,0
+DA:164,0
 DA:165,0
 DA:166,0
-DA:167,0
-DA:168,0
-DA:169,0
-DA:170,0
-DA:172,0
-FN:178,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Delete(BlabberApp.Domain.Interfaces.IEntity)
-FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::Delete(BlabberApp.Domain.Interfaces.IEntity)
-DA:179,0
-DA:181,0
-DA:182,0
-DA:183,0
-DA:184,0
-DA:185,0
-DA:186,0
-DA:188,0
 FN:22,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::.ctor()
 FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlBlab::.ctor()
 DA:23,0
@@ -177,10 +166,7 @@ DA:29,0
 DA:30,0
 DA:31,0
 DA:32,0
-DA:33,0
-DA:34,0
-DA:36,0
-LF:94
+LF:79
 LH:0
 BRF:4
 BRH:0
@@ -226,110 +212,98 @@ FNF:4
 FNH:0
 end_of_record
 SF:C:\Users\Alex\Git\CS4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.DataStore\Plugins\MySqlUser.cs
-FN:40,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Close()
+FN:36,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Close()
 FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Close()
-DA:41,0
-DA:42,0
-DA:43,0
-FN:48,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Create(BlabberApp.Domain.Interfaces.IEntity)
+DA:37,0
+DA:38,0
+DA:39,0
+FN:44,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Create(BlabberApp.Domain.Interfaces.IEntity)
 FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Create(BlabberApp.Domain.Interfaces.IEntity)
-DA:49,0
-DA:51,0
+DA:45,0
+DA:47,0
+DA:57,0
+DA:58,0
+DA:60,0
 DA:61,0
 DA:62,0
+DA:63,0
 DA:64,0
 DA:65,0
 DA:66,0
 DA:67,0
 DA:68,0
-DA:69,0
-DA:70,0
-DA:71,0
-DA:72,0
-DA:73,0
+FN:73,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlUser::ReadAll()
+FNDA:0,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlUser::ReadAll()
 DA:74,0
 DA:76,0
-FN:81,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlUser::ReadAll()
-FNDA:0,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.MySqlUser::ReadAll()
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
 DA:82,0
 DA:84,0
-DA:85,0
 DA:86,0
 DA:87,0
 DA:88,0
-DA:90,0
+DA:89,0
+DA:91,0
 DA:92,0
-DA:94,0
-DA:95,0
-DA:96,0
-DA:97,0
-DA:99,0
-DA:101,0
+DA:93,0
+BRDA:86,120,1,0
+BRDA:86,120,0,0
+FN:99,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadById(System.Guid)
+FNDA:0,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadById(System.Guid)
+DA:100,0
 DA:102,0
 DA:103,0
+DA:104,0
 DA:105,0
-BRDA:94,120,1,0
-BRDA:94,120,0,0
-FN:111,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadById(System.Guid)
-FNDA:0,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadById(System.Guid)
+DA:106,0
+DA:108,0
+DA:110,0
 DA:112,0
+DA:113,0
 DA:114,0
-DA:115,0
-DA:116,0
-DA:117,0
-DA:118,0
-DA:120,0
-DA:122,0
-DA:124,0
+FN:120,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadByUserEmail(System.String)
+FNDA:0,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadByUserEmail(System.String)
+DA:121,0
+DA:123,0
+DA:125,0
 DA:126,0
 DA:127,0
 DA:128,0
 DA:130,0
-FN:136,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadByUserEmail(System.String)
-FNDA:0,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlUser::ReadByUserEmail(System.String)
-DA:137,0
-DA:139,0
-DA:141,0
+DA:132,0
+DA:134,0
+DA:135,0
+DA:136,0
+FN:141,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Update(BlabberApp.Domain.Interfaces.IEntity)
+FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Update(BlabberApp.Domain.Interfaces.IEntity)
 DA:142,0
-DA:143,0
 DA:144,0
+DA:145,0
 DA:146,0
-DA:148,0
-DA:150,0
-DA:152,0
+DA:147,0
+FN:152,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Delete(BlabberApp.Domain.Interfaces.IEntity)
+FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Delete(BlabberApp.Domain.Interfaces.IEntity)
 DA:153,0
 DA:154,0
+DA:155,0
 DA:156,0
-FN:161,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Update(BlabberApp.Domain.Interfaces.IEntity)
-FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Update(BlabberApp.Domain.Interfaces.IEntity)
-DA:162,0
-DA:164,0
-DA:165,0
-DA:166,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+FN:166,BlabberApp.Domain.Entities.User BlabberApp.DataStore.Plugins.MySqlUser::DataRow2User(System.Data.DataRow)
+FNDA:0,BlabberApp.Domain.Entities.User BlabberApp.DataStore.Plugins.MySqlUser::DataRow2User(System.Data.DataRow)
 DA:167,0
 DA:168,0
 DA:170,0
-FN:175,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Delete(BlabberApp.Domain.Interfaces.IEntity)
-FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlUser::Delete(BlabberApp.Domain.Interfaces.IEntity)
+DA:171,0
+DA:172,0
+DA:173,0
+DA:175,0
 DA:176,0
-DA:177,0
-DA:178,0
-DA:179,0
-DA:180,0
-DA:181,0
-DA:182,0
-DA:183,0
-DA:185,0
-FN:191,BlabberApp.Domain.Entities.User BlabberApp.DataStore.Plugins.MySqlUser::DataRow2User(System.Data.DataRow)
-FNDA:0,BlabberApp.Domain.Entities.User BlabberApp.DataStore.Plugins.MySqlUser::DataRow2User(System.Data.DataRow)
-DA:192,0
-DA:193,0
-DA:195,0
-DA:196,0
-DA:197,0
-DA:198,0
-DA:200,0
-DA:201,0
 FN:22,System.Void BlabberApp.DataStore.Plugins.MySqlUser::.ctor()
 FNDA:0,System.Void BlabberApp.DataStore.Plugins.MySqlUser::.ctor()
 DA:23,0
@@ -339,10 +313,7 @@ DA:29,0
 DA:30,0
 DA:31,0
 DA:32,0
-DA:33,0
-DA:34,0
-DA:36,0
-LF:96
+LF:81
 LH:0
 BRF:2
 BRH:0
@@ -438,18 +409,18 @@ FNF:7
 FNH:4
 end_of_record
 SF:C:\Users\Alex\Git\CS4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.Domain\Entities\Blab.cs
-FN:56,System.Guid BlabberApp.Domain.Entities.Blab::get_Id()
+FN:60,System.Guid BlabberApp.Domain.Entities.Blab::get_Id()
 FNDA:0,System.Guid BlabberApp.Domain.Entities.Blab::get_Id()
-DA:57,0
-FN:57,System.DateTime BlabberApp.Domain.Entities.Blab::get_DTTM()
+DA:61,0
+FN:61,System.DateTime BlabberApp.Domain.Entities.Blab::get_DTTM()
 FNDA:0,System.DateTime BlabberApp.Domain.Entities.Blab::get_DTTM()
-DA:58,0
-FN:58,System.String BlabberApp.Domain.Entities.Blab::get_Message()
+DA:62,0
+FN:62,System.String BlabberApp.Domain.Entities.Blab::get_Message()
 FNDA:0,System.String BlabberApp.Domain.Entities.Blab::get_Message()
-DA:59,0
-FN:59,BlabberApp.Domain.Entities.User BlabberApp.Domain.Entities.Blab::get_User()
+DA:63,0
+FN:63,BlabberApp.Domain.Entities.User BlabberApp.Domain.Entities.Blab::get_User()
 FNDA:0,BlabberApp.Domain.Entities.User BlabberApp.Domain.Entities.Blab::get_User()
-DA:60,0
+DA:64,0
 FN:16,System.Void BlabberApp.Domain.Entities.Blab::.ctor()
 FNDA:0,System.Void BlabberApp.Domain.Entities.Blab::.ctor()
 DA:17,0
@@ -458,32 +429,36 @@ DA:19,0
 DA:20,0
 DA:21,0
 DA:22,0
-FN:26,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String)
+DA:23,0
+FN:27,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String)
 FNDA:0,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String)
-DA:27,0
 DA:28,0
 DA:29,0
 DA:30,0
 DA:31,0
 DA:32,0
-FN:36,System.Void BlabberApp.Domain.Entities.Blab::.ctor(BlabberApp.Domain.Entities.User)
+DA:33,0
+DA:34,0
+FN:38,System.Void BlabberApp.Domain.Entities.Blab::.ctor(BlabberApp.Domain.Entities.User)
 FNDA:0,System.Void BlabberApp.Domain.Entities.Blab::.ctor(BlabberApp.Domain.Entities.User)
-DA:37,0
-DA:38,0
 DA:39,0
 DA:40,0
 DA:41,0
 DA:42,0
-FN:47,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String,BlabberApp.Domain.Entities.User)
+DA:43,0
+DA:44,0
+DA:45,0
+FN:50,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String,BlabberApp.Domain.Entities.User)
 FNDA:1,System.Void BlabberApp.Domain.Entities.Blab::.ctor(System.String,BlabberApp.Domain.Entities.User)
-DA:48,1
-DA:49,1
-DA:50,1
 DA:51,1
 DA:52,1
 DA:53,1
-LF:28
-LH:6
+DA:54,1
+DA:55,1
+DA:56,1
+DA:57,1
+LF:32
+LH:7
 BRF:0
 BRH:0
 FNF:8

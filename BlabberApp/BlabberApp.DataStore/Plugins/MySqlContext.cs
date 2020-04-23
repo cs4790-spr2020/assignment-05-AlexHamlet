@@ -9,7 +9,7 @@ namespace BlabberApp.DataStore.Plugins
     /// <summary>
     /// Added per Don's instructions, Thanks Don!
     /// </summary>
-    class MySqlContext : DbContext
+    public class MySqlContext : DbContext
     {
         /// <summary>
         /// Probably The Blab table

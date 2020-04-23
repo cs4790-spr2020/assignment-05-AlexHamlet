@@ -28,11 +28,7 @@ namespace BlabberApp.DataStore.Plugins
             try
             {
                 conn.Open();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex){throw new Exception(ex.ToString());}
         }
         /// <summary>
         /// Closes connection to database
@@ -60,10 +56,7 @@ namespace BlabberApp.DataStore.Plugins
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Returns all Blabs from the database
@@ -90,10 +83,7 @@ namespace BlabberApp.DataStore.Plugins
                 
                 return alBlabs;
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Read Blab by GUID
@@ -119,10 +109,7 @@ namespace BlabberApp.DataStore.Plugins
 
                 return blab;
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Returns Blabs associated with a User email
@@ -149,12 +136,9 @@ namespace BlabberApp.DataStore.Plugins
                 }
                 
                 return alBlabs;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
-        }
+            }catch (Exception ex){throw new Exception(ex.ToString());
+    }
+}
         /// <summary>
         /// I don't believe this works, but I'll troubleshoot it later.
         /// </summary>
@@ -165,10 +149,7 @@ namespace BlabberApp.DataStore.Plugins
             {
                 Blab blab = (Blab)obj;
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
 
         /// <summary>
@@ -181,10 +162,7 @@ namespace BlabberApp.DataStore.Plugins
             {
                 Blab blab = (Blab)obj;
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
     }
 }

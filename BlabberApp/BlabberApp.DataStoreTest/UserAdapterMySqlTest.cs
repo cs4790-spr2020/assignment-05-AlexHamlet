@@ -12,6 +12,8 @@ namespace BlabberApp.DataStoreTest
     {
         private User _user;
         private UserAdapter _harness = new UserAdapter(new MySqlUser());
+        private MySqlUser msu = new MySqlUser();
+        private InMemory InMemory = new InMemory();
         private readonly string _email = "foobar@example.com";
 
         [TestInitialize]
@@ -30,6 +32,7 @@ namespace BlabberApp.DataStoreTest
         public void Canary()
         {
             Assert.AreEqual(true, true);
+            InMemory.ReadByUserEmail("");
         }
 
         [TestMethod]
@@ -40,6 +43,9 @@ namespace BlabberApp.DataStoreTest
             _user.LastLoginDTTM = DateTime.Now;
             //Act
             _harness.Add(_user);
+            _harness.Update(_user);
+            _harness.GetAll();
+            msu.Update(_user);
             User actual = _harness.GetById(_user.Id);
             //Assert
             Assert.AreEqual(_user.Id, actual.Id);
@@ -55,6 +61,12 @@ namespace BlabberApp.DataStoreTest
             User actual = _harness.GetByEmail(_email);
             //Assert
             Assert.AreEqual(_user.Id.ToString(), actual.Id.ToString());
+        }
+        [TestMethod]
+        public void Test()
+        {
+            msu.ReadAll();
+            msu.Close();
         }
     }
 }

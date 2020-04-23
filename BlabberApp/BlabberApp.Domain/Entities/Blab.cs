@@ -16,6 +16,7 @@ namespace BlabberApp.Domain.Entities
         /// </summary>
         public Blab()
         {
+            Id = Guid.NewGuid();
             User = new User();
             Message = "";
             DTTM = DateTime.Now;
@@ -26,6 +27,7 @@ namespace BlabberApp.Domain.Entities
         /// <param name="Message">Blab Message</param>
         public Blab(string Message)
         {
+            Id = Guid.NewGuid();
             User = new User();
             this.Message = Message;
             DTTM = DateTime.Now;
@@ -36,6 +38,7 @@ namespace BlabberApp.Domain.Entities
         /// <param name="user">User object</param>
         public Blab(User user)
         {
+            Id = Guid.NewGuid();
             User = user;
             Message = "";
             DTTM = DateTime.Now;
@@ -47,6 +50,7 @@ namespace BlabberApp.Domain.Entities
         /// <param name="user">User for the Blab</param>
         public Blab(string Message, User user)
         {
+            Id = Guid.NewGuid();
             User = user;
             this.Message = Message;
             DTTM = DateTime.Now;

@@ -15,6 +15,7 @@ namespace BlabberApp.DomainTest.Entities
         {
             User harness = new User(); 
             string expected = "foobar@example.com";
+            User user = new User(expected);
             harness.ChangeEmail("foobar@example.com");
             string actual = harness.Email;
             Assert.AreEqual(actual.ToString(), expected.ToString());

@@ -101,7 +101,7 @@ namespace BlabberApp.DataStore.Plugins
         /// <returns></returns>
         public IEnumerable ReadByUserId(string Id)
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }

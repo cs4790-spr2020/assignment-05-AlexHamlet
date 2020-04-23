@@ -28,11 +28,7 @@ namespace BlabberApp.DataStore.Plugins
             try
             {
                 conn.Open();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex){throw new Exception(ex.ToString());}
         }
         /// <summary>
         /// Closes database connection
@@ -68,11 +64,7 @@ namespace BlabberApp.DataStore.Plugins
                      + "', '" + now.ToString("yyyy-MM-dd HH:mm:ss") + "')";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Get all users from database
@@ -97,11 +89,7 @@ namespace BlabberApp.DataStore.Plugins
                 }
 
                 return users;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Get User object by GUID
@@ -122,11 +110,7 @@ namespace BlabberApp.DataStore.Plugins
                 DataRow row = dsUser.Tables[0].Rows[0];
 
                 return DataRow2User(row);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Gets User by Email
@@ -148,11 +132,7 @@ namespace BlabberApp.DataStore.Plugins
                 DataRow row = dsUser.Tables[0].Rows[0];
                 
                 return DataRow2User(row);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// I'm not sure this works, but I'll troubleshoot it later.
@@ -163,10 +143,7 @@ namespace BlabberApp.DataStore.Plugins
             try
             {
                 User user = (User)obj;
-            }catch(Exception ex)
-            {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Deletes User from database
@@ -179,9 +156,7 @@ namespace BlabberApp.DataStore.Plugins
                 string sql = "DELETE FROM users WHERE users.email='"+user.Email+"'";
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
-            } catch(Exception ex) {
-                throw new Exception(ex.ToString());
-            }
+            }catch (Exception ex) { throw new Exception(ex.ToString()); }
         }
         /// <summary>
         /// Converts query results to User objects
