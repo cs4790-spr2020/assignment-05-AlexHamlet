@@ -66,8 +66,8 @@ namespace BlabberApp.DataStore.Plugins
         {
             try
             {
-                // SELECT * FROM blabs WHERE blabs.dttm_created NOT over a week ago SORTED DESC BY blabs.dttm_created
                 string sql = "SELECT * FROM blabs";
+                //string sql = "Truncate table blabs";
                 MySqlDataAdapter daBlabs = new MySqlDataAdapter(sql, this.conn); // To avoid SQL injection.
                 MySqlCommandBuilder cbBlabs = new MySqlCommandBuilder(daBlabs);
                 DataSet dsBlabs = new DataSet();
@@ -78,12 +78,23 @@ namespace BlabberApp.DataStore.Plugins
 
                 foreach( DataRow dtRow in dsBlabs.Tables[0].Rows)
                 {
-                    alBlabs.Add(dtRow);
+                    alBlabs.Add(DataRow2Blab(dtRow));
                 }
                 
                 return alBlabs;
             }
             catch (Exception ex) { throw new Exception(ex.ToString()); }
+        }
+
+        private Blab DataRow2Blab(DataRow row)
+        {
+            Blab blab = new Blab();
+
+            blab.Id = new Guid(row["sys_id"].ToString());
+            blab.Message = (string)row["message"];
+            blab.User = new User((string)row["user_id"].ToString());
+
+            return blab;
         }
         /// <summary>
         /// Read Blab by GUID

@@ -1,25 +1,25 @@
 SF:C:\Users\Alex\Git\CS4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.DataStore\Plugins\InMemory.cs
 FN:31,System.Void BlabberApp.DataStore.Plugins.InMemory::Create(BlabberApp.Domain.Interfaces.IEntity)
-FNDA:2,System.Void BlabberApp.DataStore.Plugins.InMemory::Create(BlabberApp.Domain.Interfaces.IEntity)
-DA:32,2
-DA:33,2
-DA:34,2
+FNDA:4,System.Void BlabberApp.DataStore.Plugins.InMemory::Create(BlabberApp.Domain.Interfaces.IEntity)
+DA:32,4
+DA:33,4
+DA:34,4
 FN:40,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.InMemory::ReadAll()
 FNDA:1,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.InMemory::ReadAll()
 DA:41,1
 DA:42,1
 DA:43,1
 FN:50,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.InMemory::ReadById(System.Guid)
-FNDA:1,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.InMemory::ReadById(System.Guid)
-DA:51,1
-DA:52,4
-DA:53,1
-DA:54,2
+FNDA:2,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.InMemory::ReadById(System.Guid)
+DA:51,2
+DA:52,8
+DA:53,2
+DA:54,4
 DA:55,0
 DA:56,0
-DA:57,1
-BRDA:52,57,1,1
-BRDA:54,44,0,1
+DA:57,2
+BRDA:52,57,1,2
+BRDA:54,44,0,2
 BRDA:54,44,1,0
 BRDA:52,57,0,0
 FN:66,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.InMemory::ReadByUserEmail(System.String)
@@ -38,21 +38,21 @@ BRDA:70,43,0,0
 BRDA:70,43,1,0
 BRDA:68,57,0,1
 FN:82,System.Void BlabberApp.DataStore.Plugins.InMemory::Update(BlabberApp.Domain.Interfaces.IEntity)
-FNDA:1,System.Void BlabberApp.DataStore.Plugins.InMemory::Update(BlabberApp.Domain.Interfaces.IEntity)
-DA:83,1
-DA:84,1
-DA:85,1
-DA:86,1
+FNDA:2,System.Void BlabberApp.DataStore.Plugins.InMemory::Update(BlabberApp.Domain.Interfaces.IEntity)
+DA:83,2
+DA:84,2
+DA:85,2
+DA:86,2
 FN:92,System.Void BlabberApp.DataStore.Plugins.InMemory::Delete(BlabberApp.Domain.Interfaces.IEntity)
-FNDA:1,System.Void BlabberApp.DataStore.Plugins.InMemory::Delete(BlabberApp.Domain.Interfaces.IEntity)
-DA:93,1
-DA:94,1
-DA:95,1
+FNDA:3,System.Void BlabberApp.DataStore.Plugins.InMemory::Delete(BlabberApp.Domain.Interfaces.IEntity)
+DA:93,3
+DA:94,3
+DA:95,3
 FN:102,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.InMemory::ReadByUserId(System.String)
-FNDA:1,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.InMemory::ReadByUserId(System.String)
-DA:103,1
-DA:104,1
-DA:105,1
+FNDA:2,System.Collections.IEnumerable BlabberApp.DataStore.Plugins.InMemory::ReadByUserId(System.String)
+DA:103,2
+DA:104,2
+DA:105,2
 FN:21,System.Void BlabberApp.DataStore.Plugins.InMemory::.ctor()
 FNDA:6,System.Void BlabberApp.DataStore.Plugins.InMemory::.ctor()
 DA:22,6
@@ -98,14 +98,14 @@ DA:72,2
 DA:73,2
 DA:75,2
 DA:77,2
-DA:79,54
-DA:80,24
-DA:81,24
-DA:82,24
+DA:79,58
+DA:80,26
+DA:81,26
+DA:82,26
 DA:84,2
 DA:86,0
 DA:87,2
-BRDA:79,109,1,24
+BRDA:79,109,1,26
 BRDA:79,109,0,2
 FN:93,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlBlab::ReadById(System.Guid)
 FNDA:1,BlabberApp.Domain.Interfaces.IEntity BlabberApp.DataStore.Plugins.MySqlBlab::ReadById(System.Guid)
@@ -466,8 +466,8 @@ FNH:8
 end_of_record
 SF:C:\Users\Alex\Git\CS4790\assignment-05-AlexHamlet\BlabberApp\BlabberApp.Domain\Entities\User.cs
 FN:16,System.Guid BlabberApp.Domain.Entities.User::get_Id()
-FNDA:41,System.Guid BlabberApp.Domain.Entities.User::get_Id()
-DA:17,41
+FNDA:44,System.Guid BlabberApp.Domain.Entities.User::get_Id()
+DA:17,44
 FN:17,System.DateTime BlabberApp.Domain.Entities.User::get_RegisterDTTM()
 FNDA:0,System.DateTime BlabberApp.Domain.Entities.User::get_RegisterDTTM()
 DA:18,0
@@ -495,11 +495,11 @@ BRDA:43,7,1,0
 BRDA:43,24,0,0
 BRDA:43,24,1,20
 FN:23,System.Void BlabberApp.Domain.Entities.User::.ctor()
-FNDA:13,System.Void BlabberApp.Domain.Entities.User::.ctor()
-DA:24,13
-DA:25,13
-DA:26,13
-DA:27,13
+FNDA:14,System.Void BlabberApp.Domain.Entities.User::.ctor()
+DA:24,14
+DA:25,14
+DA:26,14
+DA:27,14
 FN:31,System.Void BlabberApp.Domain.Entities.User::.ctor(System.String)
 FNDA:11,System.Void BlabberApp.Domain.Entities.User::.ctor(System.String)
 DA:32,11

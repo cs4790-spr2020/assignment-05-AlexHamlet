@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using BlabberApp.DataStore.Adapters;
 using BlabberApp.DataStore.Interfaces;
 using BlabberApp.Services;
+using BlabberApp.Domain.Entities;
 
 namespace BlabberApp.Client
 {
@@ -27,11 +28,16 @@ namespace BlabberApp.Client
         public void ConfigureServices(IServiceCollection services)
         {
             UserServiceFactory userServiceFactory = new UserServiceFactory();
+            BlabServiceFactory blabServiceFactory = new BlabServiceFactory();
             IUserPlugin userPlugin = userServiceFactory.CreateUserPlugin("mysql");
+            IBlabPlugin blabPlugin = blabServiceFactory.CreateBlabPlugin("mysql");
             UserAdapter userAdapter = userServiceFactory.CreateUserAdapter(userPlugin);
             UserService userService = userServiceFactory.CreateUserService(userAdapter);
+            BlabAdapter blabAdapter = blabServiceFactory.CreateBlabAdapter(blabPlugin);
+            BlabService blabService = blabServiceFactory.CreateBlabService(blabAdapter);
 
             services.AddSingleton<IUserService>(s => userService);
+            services.AddSingleton<IBlabService>(s => blabService);
             services.AddRazorPages();
         }
 

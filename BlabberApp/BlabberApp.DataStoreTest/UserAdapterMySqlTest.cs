@@ -31,8 +31,14 @@ namespace BlabberApp.DataStoreTest
         [TestMethod]
         public void Canary()
         {
+            User user = new User();
             Assert.AreEqual(true, true);
             InMemory.ReadByUserEmail("");
+            InMemory.Create(user);
+            InMemory.Update(user);
+            InMemory.ReadById(user.Id);
+            InMemory.ReadByUserId("");
+            InMemory.Delete(user);
         }
 
         [TestMethod]
